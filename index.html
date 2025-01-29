@@ -101,33 +101,25 @@
         </ul>
         
         <style>
-        /* El fondo del botón será transparente */
-        .nav-link {
-            background-color: transparent; /* Fondo transparente */
-            border: none; /* Sin bordes */
-        }
+            .nav-link {
+                background-color: transparent !important;
+                border: none !important;
+                color: #808080 !important;
+            }
         
-        /* Cambiar el color de los botones activos */
-        .nav-link.active {
-            background-color: transparent; /* Fondo transparente en el botón activo */
-            color: grey; /* Texto blanco cuando está activo */
-        }
+            .nav-link.active {
+                color: white !important;
+            }
         
-        /* Cambiar el color de los íconos cuando el botón está activo */
-        .nav-link.active i {
-            color:white; /* Ícono blanco en el botón activo */
-        }
+            .nav-link i {
+                color: #808080 !important;
+            }
         
-        /* Cambiar el color de los íconos cuando el botón está inactivo */
-        .nav-link:not(.active) i {
-            color:grey; /* Ícono gris en los botones inactivos */
-        }
+            .nav-link.active i {
+                color: white !important;
+            }
+        </style>        
         
-        /* Cambiar el color de los botones inactivos */
-        .nav-link:not(.active) {
-            color: white; /* Texto gris en el botón inactivo */
-        }
-        </style>      
         
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
@@ -138,6 +130,23 @@
                             style="width: auto; margin: auto auto;">
 
                             <!-- Card 1 -->
+                            <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-1 bg-transparent text-white"
+                                style="max-width:600px;">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h4><strong>Fulanito Ruiz</strong></h4>
+                                        <h6>Publicidad</h6>
+                                    </div>
+                                    <div class="col-2 justify-content-center d-flex align-self-center"><i class="fa-solid fa-ellipsis-vertical fa-2x"></i></div>
+                                </div>
+                                <img src="https://loremflickr.com/320/240"/>
+                                <div class="card-block pt-2">
+                                    <h5 class="card-title pt-2">204 likes</h5>
+                                    <p class="card-text">Each merged squad salts the wild porter...</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
                             <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-1 bg-transparent text-white"
                                 style="max-width:600px;">
                                 <div class="row">
@@ -154,34 +163,19 @@
                                 </div>
                             </div>
 
-                            <!-- Card 2 -->
-                            <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4"
-                                style="max-width:600px;">
-                                <div class="row">
-                                    <div class="col-10">
-                                        <h3>Esto es una imagen</h3>
-                                    </div>
-                                    <div class="col-2">1/9</div>
-                                </div>
-                                <img src="https://loremflickr.com/320/240" />
-                                <div class="card-block">
-                                    <h5 class="card-title">204 likes</h5>
-                                    <p class="card-text">Each merged squad salts the wild porter...</p>
-                                </div>
-                            </div>
-
                             <!-- Card 3 -->
-                            <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4"
+                            <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-1 bg-transparent text-white"
                                 style="max-width:600px;">
                                 <div class="row">
                                     <div class="col-10">
-                                        <h3>Esto es una imagen</h3>
+                                        <h4><strong>Fulanito Ruiz</strong></h4>
+                                        <h5>Publicidad</h5>
                                     </div>
-                                    <div class="col-2">1/9</div>
+                                    <div class="col-2 justify-content-center d-flex">1/9</div>
                                 </div>
-                                <img src="https://loremflickr.com/320/240" />
+                                <img src="https://loremflickr.com/320/240"/>
                                 <div class="card-block pt-2">
-                                    <h5 class="card-title">204 likes</h5>
+                                    <h5 class="card-title pt-2">204 likes</h5>
                                     <p class="card-text">Each merged squad salts the wild porter...</p>
                                 </div>
                             </div>
