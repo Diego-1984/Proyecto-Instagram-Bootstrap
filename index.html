@@ -36,31 +36,30 @@
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-black border-light text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Crear un nuevo post
                 </button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
+                    <div class="modal-dialog bg-dark">
+                        <div class="modal-content bg-dark">
                             <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Crear un nuevo post</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                <button type="button" class="btn-close btn-dark border-light" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body bg-dark">
                                 <div class="row border">
-                                    <textarea>Escribe algo...</textarea>
+                                    <textarea style="background-color: black;color: white;">Escribe algo...</textarea>
                                 </div>
                             </div>
-                            <div class="modal-footer justify-content-start">
+                            <div class="modal-footer justify-content-start bg-dark">
                                 <button type="button" class="btn btn-link"><i class="fa-solid fa-camera"></i></button>
                                 <button type="button" class="btn btn-link"><i
                                         class="fa-solid fa-location-dot"></i></button>
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer bg-dark">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                                 <button type="button" class="btn btn-primary">Guardar</button>
                             </div>
@@ -68,59 +67,61 @@
                     </div>
                 </div>
 
+                <!--Dropdown-->
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    <button class="btn btn-black border-light dropdown-toggle text-white" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <i class="fa-solid fa-gear"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Perfil</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
-                        <li><a class="dropdown-item" href="#">Privacidad</a></li>
-                        <li><a class="dropdown-item" href="#" style="color: red;">Salir</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark">
+                        <li><a class="dropdown-item text-white hover:bg-dark" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item text-white hover:bg-secondary" href="#">Accesibilidad</a></li>
+                        <li><a class="dropdown-item text-white hover:bg-secondary" href="#">Privacidad</a></li>
+                        <li><a class="dropdown-item text-danger hover:bg-secondary" href="#">Salir</a></li>
                     </ul>
-                </div>
-            </div>
+                </div>                          
+                
         </nav>
 
+        <!--Navtabs-->
         <ul class="nav nav-tabs justify-content-center border-0" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active bg-transparent border-0 text-grey" id="home-tab" data-bs-toggle="tab" 
-                        data-bs-target="#home-tab-pane" type="button" role="tab" 
-                        aria-controls="home-tab-pane" aria-selected="true">
+                <button class="nav-link active bg-transparent border-0 text-grey" id="home-tab" data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                    aria-selected="true">
                     <i class="fa-solid fa-square"></i>
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link bg-transparent border-0" id="profile-tab" data-bs-toggle="tab" 
-                        data-bs-target="#profile-tab-pane" type="button" role="tab" 
-                        aria-controls="profile-tab-pane" aria-selected="false">
+                <button class="nav-link bg-transparent border-0" id="profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                    aria-selected="false">
                     <i class="fa-solid fa-table-cells"></i>
                 </button>
             </li>
         </ul>
-        
+
         <style>
             .nav-link {
                 background-color: transparent !important;
                 border: none !important;
                 color: #808080 !important;
             }
-        
+
             .nav-link.active {
                 color: white !important;
             }
-        
+
             .nav-link i {
                 color: #808080 !important;
             }
-        
+
             .nav-link.active i {
                 color: white !important;
             }
-        </style>        
-        
-        
+        </style>
+
+
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
@@ -133,16 +134,29 @@
                             <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-1 bg-transparent text-white"
                                 style="max-width:600px;">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-1"><img src="https://loremflickr.com/50/50"
+                                            class="rounded-circle" /></div>
+                                    <div class="col-9 mx-3">
                                         <h4><strong>Fulanito Ruiz</strong></h4>
                                         <h6>Publicidad</h6>
                                     </div>
-                                    <div class="col-2 justify-content-center d-flex align-self-center"><i class="fa-solid fa-ellipsis-vertical fa-2x"></i></div>
+                                    <div class="col-1 d-flex align-items-center justify-content-end"><i
+                                            class="fa-solid fa-ellipsis-vertical fa-2x"></i></div>
                                 </div>
-                                <img src="https://loremflickr.com/320/240"/>
+                                <img src="https://loremflickr.com/320/240" />
                                 <div class="card-block pt-2">
-                                    <h5 class="card-title pt-2">204 likes</h5>
-                                    <p class="card-text">Each merged squad salts the wild porter...</p>
+                                    <h5 class="card-title pt-2">
+                                        <div class="row">
+                                            <div class="col-11 d-flex gap-2"><i class="fa-regular fa-heart fa-2x"></i><i
+                                                    class="fa-regular fa-comment fa-2x"></i><i
+                                                    class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                            <div class="col-1 d-flex align-items-center justify-content-end"><i
+                                                    class="fa-regular fa-bookmark fa-2x"></i></div>
+                                        </div>
+                                    </h5>
+                                    <p class="card-text my-1"><strong>Fulanitoruiz</strong> Each merged squad salts the
+                                        wild porter...</p>
+                                    <p class="card-text text-secondary">Publicado hace 5 segundos</p>
                                 </div>
                             </div>
 
@@ -150,33 +164,59 @@
                             <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-1 bg-transparent text-white"
                                 style="max-width:600px;">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-1"><img src="https://loremflickr.com/50/50"
+                                            class="rounded-circle" /></div>
+                                    <div class="col-9 mx-3">
                                         <h4><strong>Fulanito Ruiz</strong></h4>
-                                        <h5>Publicidad</h5>
+                                        <h6>Publicidad</h6>
                                     </div>
-                                    <div class="col-2 justify-content-center d-flex">1/9</div>
+                                    <div class="col-1 d-flex align-items-center justify-content-end"><i
+                                            class="fa-solid fa-ellipsis-vertical fa-2x"></i></div>
                                 </div>
-                                <img src="https://loremflickr.com/320/240"/>
+                                <img src="https://loremflickr.com/320/240" />
                                 <div class="card-block pt-2">
-                                    <h5 class="card-title pt-2">204 likes</h5>
-                                    <p class="card-text">Each merged squad salts the wild porter...</p>
+                                    <h5 class="card-title pt-2">
+                                        <div class="row">
+                                            <div class="col-11 d-flex gap-2"><i class="fa-regular fa-heart fa-2x"></i><i
+                                                    class="fa-regular fa-comment fa-2x"></i><i
+                                                    class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                            <div class="col-1 d-flex align-items-center justify-content-end"><i
+                                                    class="fa-regular fa-bookmark fa-2x"></i></div>
+                                        </div>
+                                    </h5>
+                                    <p class="card-text my-1"><strong>Fulanitoruiz</strong> Each merged squad salts the
+                                        wild porter...</p>
+                                    <p class="card-text text-secondary">Publicado hace 5 segundos</p>
                                 </div>
                             </div>
 
                             <!-- Card 3 -->
-                            <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-1 bg-transparent text-white"
+                            <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3 bg-transparent text-white"
                                 style="max-width:600px;">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-1"><img src="https://loremflickr.com/50/50"
+                                            class="rounded-circle" /></div>
+                                    <div class="col-9 mx-3">
                                         <h4><strong>Fulanito Ruiz</strong></h4>
-                                        <h5>Publicidad</h5>
+                                        <h6>Publicidad</h6>
                                     </div>
-                                    <div class="col-2 justify-content-center d-flex">1/9</div>
+                                    <div class="col-1 d-flex align-items-center justify-content-end"><i
+                                            class="fa-solid fa-ellipsis-vertical fa-2x"></i></div>
                                 </div>
-                                <img src="https://loremflickr.com/320/240"/>
+                                <img src="https://loremflickr.com/320/240" />
                                 <div class="card-block pt-2">
-                                    <h5 class="card-title pt-2">204 likes</h5>
-                                    <p class="card-text">Each merged squad salts the wild porter...</p>
+                                    <h5 class="card-title pt-2">
+                                        <div class="row">
+                                            <div class="col-11 d-flex gap-2"><i class="fa-regular fa-heart fa-2x"></i><i
+                                                    class="fa-regular fa-comment fa-2x"></i><i
+                                                    class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                            <div class="col-1 d-flex align-items-center justify-content-end"><i
+                                                    class="fa-regular fa-bookmark fa-2x"></i></div>
+                                        </div>
+                                    </h5>
+                                    <p class="card-text my-1"><strong>Fulanitoruiz</strong> Each merged squad salts the
+                                        wild porter...</p>
+                                    <p class="card-text text-secondary">Publicado hace 5 segundos</p>
                                 </div>
                             </div>
 
